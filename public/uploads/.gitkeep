@@ -1,0 +1,13 @@
+# Folder untuk menyimpan gambar
+
+Simpan semua gambar project, sertifikat, dan lainnya di folder ini.
+
+## Format yang disarankan:
+- Project: project1.jpg, project2.jpg, dst.
+- Certificate: certificate-react.jpg, certificate-aws.jpg, dst.
+- Profile: profile.jpg
+
+## Ukuran yang disarankan:
+- Project: 800x600px (16:9 ratio)
+- Certificate: 1200x800px (A4 ratio)
+- Max size: 500KB per gambar
