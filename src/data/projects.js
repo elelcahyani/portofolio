@@ -6,7 +6,7 @@ export const projects = [
     title: "Personal Money Management",
     description: "Aplikasi manajemen keuangan pribadi yang membantu Anda mengelola pemasukan, pengeluaran, dan mencapai target keuangan dengan mudah.",
     img: "/uploads/projects/project1.png",
-    link: "https://demo-ecommerce.vercel.app",
+    link: "https://elfadwicahyani.vercel.app/",
     Github: "https://github.com/elelcahyani/personal-money-management.git",
     techStack: ["Laravel", "Tailwind CSS", "Mysql", "Chart.js"],
     Title: "Personal Money Management",
@@ -17,7 +17,7 @@ export const projects = [
       "/uploads/projects/project2.png",
       "/uploads/projects/project3.png"
     ],
-    Link: "https://demo-ecommerce.vercel.app",
+    Link: "https://elfadwicahyani.vercel.app/",
     TechStack: ["Laravel", "Tailwind CSS", "Mysql", "Chart.js"],
     fullDescription: "Website ini saya kembangkan dengan tujuan untuk membantu saya dalam mengelola keuangan pribadi dengan menggunakan sistem yang interaktif, Website ini memungkinkan pengguna untuk melihat grafik keuangan dalam jangka waktu tertentu, selain itu pengguna juga dapat mengunduh file excel untuk  mendapatkan data laporan keuangan dalam bentuk file excel. Website ini bukan hanya sebagai alat untuk memanajemen keuangan tapi juga sebagai partner keuangan digital yang dapat membantu menetapkan goals yang inngin kamu capai. ",
     Features: [
@@ -89,7 +89,7 @@ export const projects = [
     title: "Website top up gaming",
     description: "Platform top-up game online yang aman, cepat, dan terpercaya dengan berbagai pilihan game populer dan berbagai metode pembayaran.",
     img: "/uploads/projects/project10.png",
-    link: "hhttps://elelcahyani.github.io/WEB-Pesona-Kepri/",
+    link: "https://elfadwicahyani.vercel.app/",
     Github: "https://github.com/elelcahyani/personal_project_web_TopUPGaming.git",
     techStack: ["React", "Tailwind CSS", "Node.js","JWT","Midtrans", "Mysql"],
     Title: "Website top up gaming",
@@ -100,7 +100,7 @@ export const projects = [
       "/uploads/projects/project11.png",
       "/uploads/projects/project12.png"
     ],
-    Link: "https://elelcahyani.github.io/WEB-Pesona-Kepri/",
+    Link: "https://elfadwicahyani.vercel.app/",
     TechStack: ["React", "Tailwind CSS", "Node.js","JWT","Midtrans", "Mysql"],
     fullDescription: "Website say bangun dengan tujuan untuk memberikan tampilan website yang lebih ramah pengguna untuk para pemula yang belum pernah melakukan top up website, dikarenakan kebanyakan  website untuk melakukan top up memiliki tampilan navigasi yang kurang bagus dan tidak ramah untuk pengguna baru, oleh karrena itu saya mengembangkan website ini untuk memberikan tampilan website untuk top up game. Website ini masih akan saya kembangkan lagi untuk kedepanya agar bisa memberikan hasil yang lebih baik dan memuaskan lagi untuk kedepanya.",
     Features: [
@@ -116,7 +116,7 @@ export const projects = [
     title: "Sistem Akademik (SIAKAD)",
     description: "Aplikasi web untuk manajemen akademik berbasis CodeIgniter 4 yang mencakup manajemen mahasiswa, dosen, mata kuliah, jadwal, dan materi pembelajaran.",
     img: "/uploads/projects/project13.png",
-    link: "https://social-dashboard-demo.vercel.app",
+    link: "https://elfadwicahyani.vercel.app/",
     Github: "https://github.com/elelcahyani/siakad.githttps://github.com/elelcahyani/siakad.git",
     techStack: ["codeigniter", "php", "Mysql", "Bootstrap"],
     Title: "Sistem Akademik (SIAKAD)",
@@ -128,7 +128,7 @@ export const projects = [
       "/uploads/projects/project15.png",
       "/uploads/projects/project16.png"
     ],
-    Link: "https://social-dashboard-demo.vercel.app",
+    Link: "https://elfadwicahyani.vercel.app/",
     TechStack: ["codeigniter", "php", "Mysql", "Bootstrap"],
     fullDescription: "Sistem akademik (SIAKAD) ini merupakan website yang saya kembangkan untuk memenuhi tugas Uji Kompetensi mata kuliah Pemograman web untuk menguji kemampuan dalam menggunakan framework Codeignither. Wbsite ini memiliki 3 halaman yaknik admin yang dapat menambahkan data mahasiswa dan dosen, serta menambahkanuser untuk dapat loggin ke sistem akademik, selain itu admin memiliki fungsi CRUD yang pada halaman tambah jadwal, ruangan dan matakuliah. Saya berencana untuk terus mengembangkan website ini lagi agar bermanfaat bagi instansi yang membutuhkan.",
     Features: [
