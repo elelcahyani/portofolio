@@ -80,11 +80,6 @@ const Experience = () => {
             data-aos-delay={index * 100}
             className="relative mb-12 last:mb-0"
           >
-            {/* Timeline Line */}
-            {index !== experienceData.length - 1 && (
-              <div className={`absolute left-6 top-20 w-0.5 h-[calc(100%+3rem)] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`} />
-            )}
-
             {/* Card */}
             <div className={`relative ${isDark ? 'bg-slate-800/50' : 'bg-slate-50'} rounded-2xl p-6 md:p-8 border ${isDark ? 'border-slate-700' : 'border-slate-200'} hover:border-cyan-400/50 transition-all duration-300 group hover:shadow-xl will-change-transform`}>
               
