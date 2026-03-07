@@ -9,6 +9,7 @@ const Experience = () => {
   const { isDark } = useTheme();
   const [experienceData, setExperienceData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+  const [showAllExperience, setShowAllExperience] = React.useState(false);
 
   const months = [
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -38,6 +39,12 @@ const Experience = () => {
     setExperienceData(formattedData);
     setLoading(false);
   }, []);
+
+  const toggleShowMore = () => {
+    setShowAllExperience(prev => !prev);
+  };
+
+  const displayedExperience = showAllExperience ? experienceData : experienceData.slice(0, 2);
 
   return (
     <div 
@@ -73,7 +80,7 @@ const Experience = () => {
             <p className={`${isDark ? 'text-slate-400' : 'text-slate-600'}`}>No experience data available</p>
           </div>
         ) : (
-          experienceData.map((exp, index) => (
+          displayedExperience.map((exp, index) => (
           <div
             key={index}
             data-aos="fade-up"
@@ -81,10 +88,10 @@ const Experience = () => {
             className="relative mb-12 last:mb-0"
           >
             {/* Card */}
-            <div className={`relative ${isDark ? 'bg-slate-800/50' : 'bg-slate-50'} rounded-2xl p-6 md:p-8 border ${isDark ? 'border-slate-700' : 'border-slate-200'} hover:border-cyan-400/50 transition-all duration-300 group hover:shadow-xl will-change-transform`}>
+            <div className={`relative ${isDark ? 'bg-slate-800/50' : 'bg-slate-50'} rounded-2xl p-6 md:p-8 border ${isDark ? 'border-slate-700' : 'border-slate-200'} hover:border-cyan-400/50 transition-all duration-200 group hover:shadow-lg`}>
               
               {/* Icon */}
-              <div className={`absolute -left-6 top-6 w-12 h-12 bg-gradient-to-r ${exp.color} rounded-full flex items-center justify-center shadow-lg will-change-transform group-hover:scale-105 transition-transform duration-200`}>
+              <div className={`absolute -left-6 top-6 w-12 h-12 bg-gradient-to-r ${exp.color} rounded-full flex items-center justify-center shadow-lg group-hover:scale-[1.02] transition-transform duration-200`}>
                 <Briefcase className="w-6 h-6 text-white" />
               </div>
 
@@ -154,6 +161,58 @@ const Experience = () => {
           ))
         )}
       </div>
+
+      {/* See More Button */}
+      {experienceData.length > 2 && (
+        <div className="mt-8 w-full flex justify-center">
+          <button
+            onClick={toggleShowMore}
+            className={`
+              px-3 py-1.5
+              ${isDark ? 'text-slate-300 hover:text-white' : 'text-slate-600 hover:text-slate-900'}
+              text-sm 
+              font-medium 
+              transition-all 
+              duration-300 
+              ease-in-out
+              flex 
+              items-center 
+              gap-2
+              ${isDark ? 'bg-white/5 hover:bg-white/10' : 'bg-slate-100 hover:bg-slate-200'}
+              rounded-md
+              border 
+              ${isDark ? 'border-white/10 hover:border-white/20' : 'border-slate-200 hover:border-slate-300'}
+              backdrop-blur-sm
+              group
+              relative
+              overflow-hidden
+            `}
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              {showAllExperience ? "See Less" : "See More"}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={`
+                  transition-transform 
+                  duration-300 
+                  ${showAllExperience ? "group-hover:-translate-y-0.5" : "group-hover:translate-y-0.5"}
+                `}
+              >
+                <polyline points={showAllExperience ? "18 15 12 9 6 15" : "6 9 12 15 18 9"}></polyline>
+              </svg>
+            </span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400/50 transition-all duration-300 group-hover:w-full"></span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };
