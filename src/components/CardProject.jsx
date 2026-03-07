@@ -30,14 +30,14 @@ const CardProject = ({ Img, Title, Description, Link: ProjectLink, id }) => {
   return (
     <div className="group relative w-full">
             
-      <div className={`relative overflow-hidden rounded-xl ${isDark ? 'bg-slate-900/90' : 'bg-white'} border ${isDark ? 'border-white/10' : 'border-slate-200'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
+      <div className={`relative overflow-hidden rounded-xl ${isDark ? 'bg-slate-900/90' : 'bg-white'} border ${isDark ? 'border-white/10' : 'border-slate-200'} shadow-md hover:shadow-lg transition-shadow duration-200`}>
     
         <div className="relative p-5">
           <div className="relative overflow-hidden rounded-lg">
             <img
               src={imageUrl}
               alt={Title}
-              className="w-full h-full object-cover will-change-transform group-hover:scale-105 transition-transform duration-300 ease-out"
+              className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200 ease-out"
               loading="lazy"
               onError={(e) => {
                 console.error('Failed to load image:', imageUrl);

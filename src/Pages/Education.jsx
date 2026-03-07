@@ -73,10 +73,10 @@ const Education = () => {
             )}
 
             {/* Card */}
-            <div className={`relative ${isDark ? 'bg-slate-800/50' : 'bg-slate-50'} rounded-2xl p-6 md:p-8 border ${isDark ? 'border-slate-700' : 'border-slate-200'} hover:border-cyan-400/50 transition-all duration-300 group hover:shadow-xl will-change-transform`}>
+            <div className={`relative ${isDark ? 'bg-slate-800/50' : 'bg-slate-50'} rounded-2xl p-6 md:p-8 border ${isDark ? 'border-slate-700' : 'border-slate-200'} hover:border-cyan-400/50 transition-all duration-200 group hover:shadow-lg`}>
               
               {/* Icon */}
-              <div className={`absolute -left-6 top-6 w-12 h-12 bg-gradient-to-r ${edu.color} rounded-full flex items-center justify-center shadow-lg will-change-transform group-hover:scale-105 transition-transform duration-200`}>
+              <div className={`absolute -left-6 top-6 w-12 h-12 bg-gradient-to-r ${edu.color} rounded-full flex items-center justify-center shadow-lg group-hover:scale-[1.02] transition-transform duration-200`}>
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
 

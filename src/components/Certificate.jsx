@@ -26,11 +26,11 @@ const Certificate = ({ ImgSertif }) => {
 					position: "relative",
 					overflow: "hidden",
 					borderRadius: 2,
-					boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
-					transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+					boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+					transition: "all 0.2s ease-out",
 					"&:hover": {
-						transform: "translateY(-5px)",
-						boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
+						transform: "translateY(-3px)",
+						boxShadow: "0 8px 16px rgba(0,0,0,0.15)",
 						"& .overlay": {
 							opacity: 1,
 						},
@@ -39,7 +39,7 @@ const Certificate = ({ ImgSertif }) => {
 							opacity: 1,
 						},
 						"& .certificate-image": {
-							filter: "contrast(1.05) brightness(1) saturate(1.1)",
+							filter: "contrast(1.05) brightness(1) saturate(1.05)",
 						},
 					},
 				}}>
@@ -67,10 +67,11 @@ const Certificate = ({ ImgSertif }) => {
 							height: "auto",
 							display: "block",
 							objectFit: "cover",
-							filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
-							transition: "filter 0.3s ease",
+							filter: "contrast(1.05) brightness(0.95) saturate(1.05)",
+							transition: "filter 0.2s ease",
 						}}
 						onClick={handleOpen}
+						loading="lazy"
 						onError={(e) => {
 							console.error('Failed to load certificate:', imageUrl);
 							e.target.src = 'https://via.placeholder.com/400x300?text=Certificate';
@@ -88,7 +89,7 @@ const Certificate = ({ ImgSertif }) => {
 						right: 0,
 						bottom: 0,
 						opacity: 0,
-						transition: "all 0.3s ease",
+						transition: "all 0.2s ease",
 						cursor: "pointer",
 						zIndex: 2,
 					}}

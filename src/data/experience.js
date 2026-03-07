@@ -1,7 +1,27 @@
 // Data Experience - Edit langsung di sini untuk menambah/mengubah pengalaman
 export const experience = [
-  {
+ {
     id: 1,
+    position: "SOftware Engginer",
+    company: "PT. Arus Digital Sinergi",
+    location: "WFH/WFA",
+    type: "Internship",
+    start_month: 1, // 1 = January, 2 = February, dst.
+    start_year: "2026",
+    end_month: 3,
+    end_year: "2026",
+    is_current: 0, // 0 = sudah selesai, 1 = masih berlangsung
+    description: "membangun Website Company Profile pada PT. Arus Digital Sinergi",
+    responsibilities: [
+      "Merancang arsitektur backend full-stack dengan Laravel 11",
+      "Merancang Alur program dan melakukan requirement analysis",
+      "Mendesain database schema",
+      "Mengimplementasikan fitur dashboard admin"
+    ],
+    color: "from-cyan-400 to-blue-500"
+  },
+  {
+    id: 2,
     position: "Frontend Developer",
     company: "Core Initiative",
     location: "Online",
@@ -22,7 +42,7 @@ export const experience = [
     color: "from-cyan-400 to-blue-500"
   },
   {
-    id: 2,
+    id: 3,
     position: "Bendahara",
     company: "UKM Risalah Maritim",
     location: "Tanjung Pinang",
@@ -43,7 +63,7 @@ export const experience = [
     color: "from-purple-400 to-pink-500"
   },
   {
-    id: 3,
+    id: 4,
     position: "Data Science",
     company: "Home Credite Indonesia",
     location: "online",
@@ -64,7 +84,7 @@ export const experience = [
     color: "from-blue-400 to-cyan-500"
   },
   {
-    id: 4,
+    id: 5,
     position: "Peserta Samsung Innovationn campus Batch 7", // Edit nama lomba
     company: "Dibimbing", // Edit penyelenggara
     location: "Online", // Edit lokasi
