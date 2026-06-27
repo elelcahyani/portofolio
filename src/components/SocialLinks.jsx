@@ -5,6 +5,8 @@ import {
   Instagram,
   ExternalLink,
 } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useTheme } from "../context/ThemeContext";
 
 const socialLinks = [
@@ -44,10 +46,18 @@ const SocialLinks = () => {
   const otherLinks = socialLinks.filter((link) => !link.isPrimary);
   const [instagram, github] = otherLinks;
 
+  useEffect(() => {
+    AOS.init({
+      offset: 10,
+     
+    });
+  }, []);
+
   return (
-    <div className={`w-full ${isDark ? 'bg-gradient-to-br from-white/10 to-white/5' : 'bg-white border-slate-200'} rounded-2xl p-6 py-8 backdrop-blur-xl`}>
+    <div className="w-full bg-gradient-to-br from-white/10 to-white/5 rounded-2xl p-6 py-8 backdrop-blur-xl">
       <h3
-        className={`text-xl font-semibold ${isDark ? 'text-white' : 'text-slate-800'} mb-6 flex items-center gap-2`}
+        className={`text-xl font-semibold ${isDark ? 'text-white' : 'text-slate-900'} mb-6 flex items-center gap-2`}
+        data-aos="fade-down" 
       >
         <span className="inline-block w-8 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full"></span>
         Connect With Me
@@ -59,9 +69,11 @@ const SocialLinks = () => {
           href={linkedIn.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`group relative flex items-center justify-between p-4 rounded-lg 
-                     ${isDark ? 'bg-white/5 border-white/10 hover:border-white/20' : 'bg-slate-50 border-slate-200 hover:border-slate-300'} 
-                     border overflow-hidden transition-all duration-500`}
+          className="group relative flex items-center justify-between p-4 rounded-lg 
+                     bg-white/5 border border-white/10 overflow-hidden
+                     hover:border-white/20 transition-all duration-500"
+          data-aos="fade-up"
+          data-aos-delay="100" 
         >
           {/* Hover Gradient Background */}
           <div
@@ -88,10 +100,10 @@ const SocialLinks = () => {
 
             {/* Text Container */}
             <div className="flex flex-col">
-              <span className={`text-lg font-bold pt-[0.2rem] ${isDark ? 'text-gray-200 group-hover:text-white' : 'text-slate-700 group-hover:text-slate-900'} tracking-tight leading-none transition-colors duration-300`}>
+              <span className={`text-lg font-bold pt-[0.2rem] ${isDark ? 'text-gray-200 group-hover:text-white' : 'text-slate-800 group-hover:text-black'} tracking-tight leading-none transition-colors duration-300`}>
                 {linkedIn.displayName}
               </span>
-              <span className={`text-sm ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-slate-500 group-hover:text-slate-600'} transition-colors duration-300`}>
+              <span className={`text-sm ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-slate-600 group-hover:text-slate-800'} transition-colors duration-300`}>
                 {linkedIn.subText}
               </span>
             </div>
@@ -121,9 +133,11 @@ const SocialLinks = () => {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative flex items-center gap-3 p-4 rounded-xl 
-                               ${isDark ? 'bg-white/5 border-white/10 hover:border-white/20' : 'bg-slate-50 border-slate-200 hover:border-slate-300'}
-                               border overflow-hidden transition-all duration-500`}
+              className="group relative flex items-center gap-3 p-4 rounded-xl 
+                               bg-white/5 border border-white/10 overflow-hidden
+                               hover:border-white/20 transition-all duration-500"
+              data-aos="fade-up" 
+              data-aos-delay={200 + index * 100} 
             >
               <div
                 className={`absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500
@@ -146,10 +160,10 @@ const SocialLinks = () => {
 
               {/* Text Container */}
               <div className="flex flex-col min-w-0">
-                <span className={`text-sm font-bold ${isDark ? 'text-gray-200 group-hover:text-white' : 'text-slate-700 group-hover:text-slate-900'} transition-colors duration-300`}>
+                <span className={`text-sm font-bold ${isDark ? 'text-gray-200 group-hover:text-white' : 'text-slate-800 group-hover:text-black'} transition-colors duration-300`}>
                   {link.displayName}
                 </span>
-                <span className={`text-xs ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-slate-500 group-hover:text-slate-600'} truncate transition-colors duration-300`}>
+                <span className={`text-xs ${isDark ? 'text-gray-400 group-hover:text-gray-300' : 'text-slate-600 group-hover:text-slate-800'} truncate transition-colors duration-300`}>
                   {link.subText}
                 </span>
               </div>
