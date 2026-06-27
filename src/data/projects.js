@@ -3,6 +3,31 @@
 export const projects = [
   {
     id: 1,
+    title: "Company Profile PT. Arus Digital Sinergi",
+    description: "Merancang database dan alur program website company profile di PT. Arus Digital Sinergi",
+    img: "/uploads/projects/project18.png",
+    link: "https://elfadwicahyani.vercel.app/",
+    Github: "https://github.com/elelcahyani",
+    techStack: ["Laravel", "React.js", "Inercia API"],
+    Title: "Company Profile PT. Arus Digital Sinergi",
+    Description: "Merancang database dan alur program website company profile di PT. Arus Digital Sinergi",
+    Img: "/uploads/projects/project18.png",
+    Images: [
+      "/uploads/projects/project18.png",
+      "/uploads/projects/project19.png",
+      "/uploads/projects/project20.png"
+    ],
+    Link: "https://www.linkedin.com/posts/elfadwicahyani_data-datavisualization-datascience-activity-7391741367695138816-FCOe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMnzWMBI0xqKwmxGBvfNm-IUzVTXNPa9-U",
+    TechStack: ["Laravel", "React.js", "Inercia JS"],
+    fullDescription: "Sebagai Lead Backend Developer selama 2 bulan di PT. Arus Digital Sinergi, saya merancang dan mengimplementasikan backend website company profile PT. Arus Digital Sinergi menggunakan Framework Laravel dan React JS,  termasuk analisis kebutuhan, arsitektur alur, desain database relasional, pengembangan fitur dashboard admin serta CRUD konten dinamis, media management, serta pengiriman data sebagai props melalui Inertia untuk pengalaman SPA-like yang seamless yang mudah dikelola oleh tim non-technical.",
+    Features: [
+      "CRUD pada Dashboard Admin",
+      "Export data dalam bentuk file excel, pdf, csv menggunakan library Maatwebsite excel dan Barryvdh DomPDF",
+      "IResponsive mobile dan tablet"
+    ]
+  },
+  {
+    id: 2,
     title: "Personal Money Management",
     description: "Aplikasi manajemen keuangan pribadi yang membantu Anda mengelola pemasukan, pengeluaran, dan mencapai target keuangan dengan mudah.",
     img: "/uploads/projects/project1.png",
@@ -30,7 +55,7 @@ export const projects = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "Ecommerce Catalog",
     description: "Aplikasi Ecommerce catalog sederhana menggunakan vue dan fake store API",
     img: "/uploads/projects/project4.png",
@@ -57,7 +82,7 @@ export const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     title: "Website Pesona Kepri",
     description: "Website informatif yang memeperkenalkan keindahan wisata alam kepulauan riau",
     img: "/uploads/projects/project7.png",
@@ -85,7 +110,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     title: "Website top up gaming",
     description: "Platform top-up game online yang aman, cepat, dan terpercaya dengan berbagai pilihan game populer dan berbagai metode pembayaran.",
     img: "/uploads/projects/project10.png",
@@ -112,7 +137,7 @@ export const projects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     title: "Sistem Akademik (SIAKAD)",
     description: "Aplikasi web untuk manajemen akademik berbasis CodeIgniter 4 yang mencakup manajemen mahasiswa, dosen, mata kuliah, jadwal, dan materi pembelajaran.",
     img: "/uploads/projects/project13.png",
@@ -141,7 +166,7 @@ export const projects = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     title: "HCI Data Science Project",
     description: "Project-Based-Virtual-Internship dari Home Credit Indonesia x Rakamin pengembangan model credit scoring yang akurat untuk populasi unbanked yaitu individu dengan riwayat kredit formal yang minim atau tidak ada melalui pemanfaatan data alternatif seperti histori aplikasi dan data dari biro eksternal",
     img: "/uploads/projects/project17.png",
@@ -164,31 +189,6 @@ export const projects = [
       "Statistical analysis",
       "Jupyter notebook documentation",
       "Bussines Resomendation"
-    ]
-  },
-  {
-    id: 7,
-    title: "Company Profile PT. Arus Digital Sinergi",
-    description: "Merancang database dan alur program website company profile di PT. Arus Digital Sinergi",
-    img: "/uploads/projects/project18.png",
-    link: "https://elfadwicahyani.vercel.app/",
-    Github: "https://github.com/elelcahyani",
-    techStack: ["Laravel", "React.js", "Inercia API"],
-    Title: "Company Profile PT. Arus Digital Sinergi",
-    Description: "Merancang database dan alur program website company profile di PT. Arus Digital Sinergi",
-    Img: "/uploads/projects/project18.png",
-    Images: [
-      "/uploads/projects/project18.png",
-      "/uploads/projects/project19.png",
-      "/uploads/projects/project20.png"
-    ],
-    Link: "https://www.linkedin.com/posts/elfadwicahyani_data-datavisualization-datascience-activity-7391741367695138816-FCOe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMnzWMBI0xqKwmxGBvfNm-IUzVTXNPa9-U",
-    TechStack: ["Laravel", "React.js", "Inercia JS"],
-    fullDescription: "Sebagai Lead Backend Developer selama 2 bulan di PT. Arus Digital Sinergi, saya merancang dan mengimplementasikan backend website company profile PT. Arus Digital Sinergi menggunakan Framework Laravel dan React JS,  termasuk analisis kebutuhan, arsitektur alur, desain database relasional, pengembangan fitur dashboard admin serta CRUD konten dinamis, media management, serta pengiriman data sebagai props melalui Inertia untuk pengalaman SPA-like yang seamless yang mudah dikelola oleh tim non-technical.",
-    Features: [
-      "CRUD pada Dashboard Admin",
-      "Export data dalam bentuk file excel, pdf, csv menggunakan library Maatwebsite excel dan Barryvdh DomPDF",
-      "IResponsive mobile dan tablet"
     ]
   }
 ];
