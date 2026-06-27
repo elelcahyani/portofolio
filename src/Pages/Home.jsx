@@ -22,7 +22,7 @@ const MainTitle = memo(({ isDark }) => (
       <span className="relative inline-block">
         <span className="absolute -inset-2 bg-gradient-to-r from-cyan-400 to-blue-500 blur-2xl opacity-20"></span>
         <span className={`relative ${isDark ? 'bg-gradient-to-r from-white via-cyan-100 to-blue-200' : 'bg-gradient-to-r from-slate-900 via-cyan-600 to-blue-600'} bg-clip-text text-transparent`}>
-        Web
+        Software
         </span>
       </span>
       <br />
